@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 0xArun — Portfolio (React + Vite)
 
 ## How to run
@@ -56,3 +57,6 @@ arun-portfolio/
 - Components — each section is its own reusable `.jsx` file
 - Props — `Divider` accepts a `fancy` prop to switch between two styles
 - `.map()` — renders skills, projects, and certs from arrays instead of repeating HTML
+=======
+# Portfolio
+>>>>>>> 7e4a64798d0af93b163977e56cdc3a4764dc29f9
