@@ -1,0 +1,56 @@
+.cert-block { margin-bottom: 12px; }
+
+.cert-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.cert-header:hover {
+  border-color: var(--purple);
+  background: var(--surface2);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+.cert-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cert-sub {
+  color: var(--dim);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.cert-toggle {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  background: none;
+  border: 1px solid var(--purple);
+  color: var(--purple2);
+  padding: 4px 12px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.cert-toggle:hover {
+  background: var(--purple3);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.5);
+}
+
+.cert-img {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-top: none;
+  display: block;
+}

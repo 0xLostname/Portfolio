@@ -1,0 +1,40 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease;
+}
+
+.loading-fade { opacity: 0; pointer-events: none; }
+
+.loading-box { text-align: left; min-width: 320px; }
+
+.loading-logo {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--purple2);
+  margin-bottom: 24px;
+  text-shadow: 0 0 30px rgba(139,92,246,0.7);
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+.loading-line {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+  animation: fadeUp 0.4s ease both;
+}
+
+.loading-line:last-of-type { color: var(--green); }
+
+.loading-cursor {
+  color: var(--purple2);
+  animation: blink 0.7s infinite;
+  font-size: 1rem;
+}
