@@ -1,0 +1,80 @@
+.heatmap-wrap {
+  margin-top: 12px;
+}
+
+.heatmap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.heatmap-count {
+  font-size: 0.78rem;
+  color: var(--dim);
+  letter-spacing: 1px;
+}
+
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.7rem;
+  color: var(--dim);
+}
+
+.heatmap-scroll {
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.heatmap-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: max-content;
+}
+
+.hm-months {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 2px;
+}
+
+.hm-month {
+  width: 13px;
+  font-size: 0.62rem;
+  color: var(--dim);
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.hm-row {
+  display: flex;
+  gap: 2px;
+}
+
+.hm-cell {
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  display: inline-block;
+  transition: transform 0.15s;
+}
+
+.hm-cell:hover { transform: scale(1.3); }
+.hm-pad { background: transparent; }
+
+.level-0 { background: var(--surface2); border: 1px solid var(--border); }
+.level-1 { background: rgba(109, 40, 217, 0.35); }
+.level-2 { background: rgba(109, 40, 217, 0.58); }
+.level-3 { background: rgba(139, 92, 246, 0.78); }
+.level-4 { background: var(--purple2); box-shadow: 0 0 6px rgba(139,92,246,0.6); }
+
+[data-theme="light"] .level-0 { background: #ede9fe; border-color: #ddd6fe; }
+[data-theme="light"] .level-1 { background: #c4b5fd; }
+[data-theme="light"] .level-2 { background: #a78bfa; }
+[data-theme="light"] .level-3 { background: #7c3aed; }
+[data-theme="light"] .level-4 { background: #5b21b6; box-shadow: none; }

@@ -1,0 +1,85 @@
+.projects-full { display: flex; flex-direction: column; gap: 2px; background: var(--border); }
+
+.project-full-card {
+  background: var(--surface);
+  padding: 28px 32px;
+  transition: background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-full-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--purple3), var(--purple2));
+  transition: width 0.4s;
+}
+
+.project-full-card:hover { background: var(--surface2); }
+.project-full-card:hover::before { width: 100%; }
+
+.pfc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.pfc-lang {
+  font-size: 0.72rem;
+  color: var(--purple);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.pfc-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.pfc-title a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.pfc-title a:hover { color: var(--purple2); }
+
+.pfc-desc {
+  font-size: 0.85rem;
+  color: var(--dim);
+}
+
+.pfc-tag {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid var(--border2);
+  color: var(--purple2);
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+.pfc-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.pfc-highlights li {
+  font-size: 0.84rem;
+  color: var(--dim);
+  transition: color 0.2s;
+}
+
+.project-full-card:hover .pfc-highlights li { color: var(--text); }
+
+.pfc-bullet { color: var(--purple); margin-right: 6px; }
